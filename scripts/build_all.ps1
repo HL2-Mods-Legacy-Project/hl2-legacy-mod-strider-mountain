@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Strider_Mountain_V3" `
+  -ModName "Strider Mountain V3" `
+  -ModFolder "Strider_Mountain" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/strider-mountain/Strider-Mountain-V3-Original.zip" `
+  -ModBaseFilesUrlHash "3f9b1d6bf1ba1f6cb048f5acf603e6cf0d9a7f29097e3c60f48fd2a595caa6ee" `
+  -ModReadmePath "ReadMe.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
